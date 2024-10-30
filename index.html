@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/TipperaryBorder_2.js"></script><script src="layers/1750mSiteBuffer10xRD_3.js"></script><script src="layers/TurbineDistancestoEachother_4.js"></script><script src="layers/TurbineDistancestoOtherFeatures_5.js"></script><script src="layers/1TTY5081LouisRonan_6.js"></script><script src="layers/1STY58758FJaneRonan_7.js"></script><script src="layers/1RTY38596FDeirdreRonanJacquelineRonanJohnFRonan_8.js"></script><script src="layers/1QTY6133FJacquelineRonanDeirdreRonan_9.js"></script><script src="layers/1PTY69134FLouisRonan_10.js"></script><script src="layers/1OTY37566FLouisRonan_11.js"></script><script src="layers/1NTY35720DavidMRonan_12.js"></script><script src="layers/1MTY51973FJacquelineRonan_13.js"></script><script src="layers/1LTY28062FGerardODonnell_14.js"></script><script src="layers/1KTY19477SeamusLyonsAccess_15.js"></script><script src="layers/1JTY5082LiamFrankQuirke_16.js"></script><script src="layers/1ITY17039PatrickMaher_17.js"></script><script src="layers/1HTY5080LouisRonan_18.js"></script><script src="layers/1GTY21547RobertWalsh_19.js"></script><script src="layers/1FTY11666PatrickWalshAileenWalsh_20.js"></script><script src="layers/1ETY21679AodhKennedy_21.js"></script><script src="layers/1DTY5512AodhKennedy_22.js"></script><script src="layers/1CTY5514AodhKennedy_23.js"></script><script src="layers/1BTY39291FElizabethKennedy_24.js"></script><script src="layers/1ATY5519ElizabethKennedy_25.js"></script><script src="layers/LoopSubstation5AcresAdditional25Acres_26.js"></script><script src="layers/ResidentialMixed800mCommercial500mHousingCurtilage_27.js"></script><script src="layers/HousingCurtillage800mBuffer_28.js"></script><script src="layers/NaturalDesignatedAreasMergedTogetherTipperary_29.js"></script><script src="layers/RiversTipperary_30.js"></script><script src="layers/ArchaeologyTipperary_31.js"></script><script src="layers/PowerLinesTipperary_32.js"></script><script src="layers/PowerPolesTipperary_33.js"></script><script src="layers/10mRoadBuffer_34.js"></script><script src="layers/Roads_35.js"></script><script src="layers/875mOversail_36.js"></script><script src="layers/IndicativeTurbineLocations25x35Ellipses_37.js"></script><script src="layers/IndicativeTurbineLocations_38.js"></script>
+        <script src="styles/TipperaryBorder_2_style.js"></script><script src="styles/1750mSiteBuffer10xRD_3_style.js"></script><script src="styles/TurbineDistancestoEachother_4_style.js"></script><script src="styles/TurbineDistancestoOtherFeatures_5_style.js"></script><script src="styles/1TTY5081LouisRonan_6_style.js"></script><script src="styles/1STY58758FJaneRonan_7_style.js"></script><script src="styles/1RTY38596FDeirdreRonanJacquelineRonanJohnFRonan_8_style.js"></script><script src="styles/1QTY6133FJacquelineRonanDeirdreRonan_9_style.js"></script><script src="styles/1PTY69134FLouisRonan_10_style.js"></script><script src="styles/1OTY37566FLouisRonan_11_style.js"></script><script src="styles/1NTY35720DavidMRonan_12_style.js"></script><script src="styles/1MTY51973FJacquelineRonan_13_style.js"></script><script src="styles/1LTY28062FGerardODonnell_14_style.js"></script><script src="styles/1KTY19477SeamusLyonsAccess_15_style.js"></script><script src="styles/1JTY5082LiamFrankQuirke_16_style.js"></script><script src="styles/1ITY17039PatrickMaher_17_style.js"></script><script src="styles/1HTY5080LouisRonan_18_style.js"></script><script src="styles/1GTY21547RobertWalsh_19_style.js"></script><script src="styles/1FTY11666PatrickWalshAileenWalsh_20_style.js"></script><script src="styles/1ETY21679AodhKennedy_21_style.js"></script><script src="styles/1DTY5512AodhKennedy_22_style.js"></script><script src="styles/1CTY5514AodhKennedy_23_style.js"></script><script src="styles/1BTY39291FElizabethKennedy_24_style.js"></script><script src="styles/1ATY5519ElizabethKennedy_25_style.js"></script><script src="styles/LoopSubstation5AcresAdditional25Acres_26_style.js"></script><script src="styles/ResidentialMixed800mCommercial500mHousingCurtilage_27_style.js"></script><script src="styles/HousingCurtillage800mBuffer_28_style.js"></script><script src="styles/NaturalDesignatedAreasMergedTogetherTipperary_29_style.js"></script><script src="styles/RiversTipperary_30_style.js"></script><script src="styles/ArchaeologyTipperary_31_style.js"></script><script src="styles/PowerLinesTipperary_32_style.js"></script><script src="styles/PowerPolesTipperary_33_style.js"></script><script src="styles/10mRoadBuffer_34_style.js"></script><script src="styles/Roads_35_style.js"></script><script src="styles/875mOversail_36_style.js"></script><script src="styles/IndicativeTurbineLocations25x35Ellipses_37_style.js"></script><script src="styles/IndicativeTurbineLocations_38_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
